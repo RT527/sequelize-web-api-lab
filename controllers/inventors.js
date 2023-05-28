@@ -30,8 +30,20 @@ const update = async (req, res) => {
   }
 }
 
+const deleteInventor = async (req, res) => {
+  try {
+    const numberOfRowsRemoved = await Inventor.destroy(
+      { where: { id: req.params.inventorId } }
+    )
+    res.status(200).json(numberOfRowsRemoved) // Expected: 1
+  } catch (error) {
+    res.status(500).json(error)
+  }
+}
+
 module.exports = {
   create,
   index,
   update,
+  delete: deleteInventor
 }
