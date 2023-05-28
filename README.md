@@ -4,7 +4,7 @@ This API allows you to perform CRUD operations on a database of Inventors!
 ## Endpoints
 The following section provides information on the available endpoints for this API.
 
-### Create a Inventor
+### Creating an Inventor
 
 **Method**: ```POST```
 
@@ -33,7 +33,7 @@ Response:
 }
 ```
 
-### Get All Inventors
+### Getting All Inventors
 
 **Method**: GET
 
@@ -55,7 +55,7 @@ Response:
 ]
 ```
 
-### Update a Inventor
+### Updating an Inventor
 
 **Method**: ```PUT```
 
@@ -84,7 +84,7 @@ Response:
 }
 ```
 
-### Delete a Inventor
+### Deleting an Inventor
 
 **Method**: ```DELETE```
 
